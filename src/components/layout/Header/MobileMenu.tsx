@@ -16,7 +16,9 @@ export const MobileMenu: React.FC<Props> = ({ open, onClose }) => {
         } else {
             document.body.style.removeProperty('overflow');
         }
-        return () => document.body.style.removeProperty('overflow');
+        return () => {
+            document.body.style.removeProperty('overflow');
+        };
     }, [open]);
 
     return (
